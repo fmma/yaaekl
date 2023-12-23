@@ -1,0 +1,5 @@
+dist
+tsconfig.tsbuildinfo
+bundle.js
+cli.js
+node_modules

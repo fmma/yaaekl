@@ -1,0 +1,28 @@
+{
+    "brackets": {
+        "round": "( )",
+        "square": "[ ]",
+        "squiggly": "{ }"
+    },
+    "keywords": {
+        "imports": "imports",
+        "generics": "generics",
+        "interfaces": "interfaces",
+        "type": "type"
+    },
+    "binops": {
+        "ops": "||",
+        "l": {
+            "ops": "&&",
+            "l": {
+                "ops": "== >= <= > <",
+                "l": {
+                    "ops": "+ -",
+                    "l": {
+                        "ops": "* /"
+                    }
+                }
+            }
+        }
+    }
+}

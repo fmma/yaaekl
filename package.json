@@ -1,0 +1,36 @@
+{
+  "name": "yaaekl",
+  "version": "0.0.1",
+  "description": "Yet Another ÆbleKage Language 🍏🥧",
+  "main": "yaaekl.js",
+  "scripts": {
+    "build": ".\\scripts\\build.cmd",
+    "watch": ".\\scripts\\watch.cmd",
+    "test": "node test/test.js",
+    "clean": ".\\scripts\\clean.cmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmma/aeblekage-language.git"
+  },
+  "keywords": [
+    "æ",
+    "aeblekage",
+    "language",
+    "compiler"
+  ],
+  "author": "Frederik",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/node": "^14.14.11",
+    "@types/yargs": "^15.0.12",
+    "concurrently": "^5.3.0",
+    "rollup": "^2.34.2",
+    "nodemon": "2.0.7"
+  },
+  "dependencies": {
+    "glob": "^7.1.3",
+    "yargs": "^16.2.0"
+  }
+}
