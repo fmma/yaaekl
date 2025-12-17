@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "description": "Yet Another ÆbleKage Language 🍏🥧",
   "main": "yaaekl.js",
+  "bin": {
+    "yaaekl": "./dist/cli.js"
+  },
   "scripts": {
-    "build": ".\\scripts\\build.cmd",
-    "watch": ".\\scripts\\watch.cmd",
+    "build": "tsc && rollup -c rollup.config.yaaekl.js",
+    "watch": "concurrently \"tsc -w\" \"rollup -c rollup.config.yaaekl.js -w\"",
     "test": "node test/test.js",
-    "clean": ".\\scripts\\clean.cmd"
+    "clean": "rm -rf dist yaaekl.js"
   },
   "repository": {
     "type": "git",

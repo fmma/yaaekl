@@ -145,7 +145,7 @@ export class token_src_iterator implements i_token_iterator {
             const match = /\n */.exec(substring)?.[0] as string;
             let top = indent_stack[indent_stack.length - 1] ?? 0;
 
-            const spaces = match.length - 1 ?? 0;
+            const spaces = match ? match.length - 1 : 0;
             if (spaces === top) {
                 this.i += 1 + spaces;
                 return { type: token_type.cr, pos: pos };

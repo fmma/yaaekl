@@ -1,0 +1,97 @@
+{
+  "imports": [],
+  "generics": [],
+  "interfaces": [],
+  "types": {},
+  "defs": {
+    "main": [
+      {
+        "type": "assign",
+        "value": ["a", [{ "type": "expr", "value": { "type": "number", "value": 100 } }]]
+      },
+      {
+        "type": "assign",
+        "value": ["b", [{ "type": "expr", "value": { "type": "number", "value": 23 } }]]
+      },
+      {
+        "type": "expr",
+        "value": {
+          "type": "app",
+          "value": [
+            { "type": "var", "value": "-" },
+            [
+              { "type": "var", "value": "a" },
+              { "type": "var", "value": "b" }
+            ]
+          ]
+        }
+      }
+    ],
+    "factorial5": [
+      { "type": "expr", "value": { "type": "number", "value": 120 } }
+    ],
+    "sum": [
+      {
+        "type": "expr",
+        "value": {
+          "type": "app",
+          "value": [
+            { "type": "var", "value": "+" },
+            [
+              {
+                "type": "app",
+                "value": [
+                  { "type": "var", "value": "+" },
+                  [
+                    { "type": "number", "value": 1 },
+                    { "type": "number", "value": 2 }
+                  ]
+                ]
+              },
+              {
+                "type": "app",
+                "value": [
+                  { "type": "var", "value": "+" },
+                  [
+                    { "type": "number", "value": 3 },
+                    { "type": "number", "value": 4 }
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    "isEqual": [
+      {
+        "type": "expr",
+        "value": {
+          "type": "app",
+          "value": [
+            { "type": "var", "value": "==" },
+            [
+              { "type": "number", "value": 42 },
+              { "type": "number", "value": 42 }
+            ]
+          ]
+        }
+      }
+    ],
+    "logic": [
+      {
+        "type": "expr",
+        "value": {
+          "type": "app",
+          "value": [
+            { "type": "var", "value": "&&" },
+            [
+              { "type": "number", "value": 1 },
+              { "type": "number", "value": 1 }
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}
