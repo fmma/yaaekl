@@ -3,3 +3,6 @@ tsconfig.tsbuildinfo
 bundle.js
 cli.js
 node_modules
+*.wasm
+test/*.js
+test/*.d.ts

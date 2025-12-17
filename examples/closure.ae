@@ -1,0 +1,9 @@
+makeAdder
+    x = 10
+    adder = [y] > x + y
+    adder
+
+main
+    add10 = makeAdder
+    result = add10 5
+    result

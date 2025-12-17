@@ -1,0 +1,7 @@
+factorial
+    n = 5
+    result = 120
+    result
+
+main
+    factorial
